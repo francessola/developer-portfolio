@@ -1,0 +1,1 @@
+console.log("Developer Portfolio loaded successfully");
