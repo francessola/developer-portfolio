@@ -3,7 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frances Solá | Developer Portfolio</title>
+    <title>Frances Solá López | Developer Portfolio</title>
+
+    <meta name="description" content="Explore the potfolio of Frances Solá López, a Computer Engineering Student showcasing software projects, research, and technical experience.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -11,12 +17,23 @@
 
     <header>
         <nav>
-            <a href="#home">Frances Solá.</a>
+            <a href="#home">Frances Solá López.</a>
 
-            <ul>
+            <button
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+             ☰ 
+            </button>
+
+            <ul id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
@@ -26,94 +43,98 @@
         <section id="home">
             <p>Computer Engineering Student</p>
 
-            <h1>Hi, I'm Frances.</h1>
+            <h1>Frances Solá López</h1>
 
             <p>
                 Computer Engineering student and undergraduate researcher
                 passionate about software development, engineering, and building
                 practical solutions through technology.
             </p>
-
-            <a href="#projects">View My Work</a>
-            <a href=""#contact">Contact Me</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
         </section>
 
         <section id="about">
             <h2>About Me</h2>
 
             <p>
-                I'm a Computer Engineering student at the University
-                of Puerto Rico at Mayagüez with a strong interest in 
-                software development, computer systems, and emerging
-                technologies.
+                I'm a Computer Engineering student at the University of Puerto Rico Mayagüez
+                who genuinely enjoys learning, exploring new technologies, and challenging myself
+                to grow both personally and professionally.
             </p>
 
             <p>
-                Through undergraduate research, technical projects,
-                and my internship experience with the U.S. Navy,
-                I've had the opportunity to apply engineering 
-                concepts to real-world challenges and strengthen
-                my problem-solving skills.
+                I'm currently involved in two undergraduate research projects focused on
+                autonomous systems and machine learning, where I have the opportunity to explore
+                different areas of engineering, collaborate with others, and continue developing my
+                technical skills.
             </p>
 
             <p>
-                I'm passionate about continuously learning,
-                exploring new technologies, and developing
-                practical solutions that make a meaningful impact.
+                My previous internship with the U.S. Navy gave me valuable hands-on experience in 
+                software development and showed me how much I enjoy turning ideas into
+                practical solutions. Whether I'm working on a personal project, learning a new
+                programming language, or exploring an unfamiliar field, I'm always excited to
+                discover something new and find ways to apply what I've learned.
             </p>
         </section>
 
         <section id="projects">
             <h2>Featured Projects</h2>
 
-            <article>
-                <h3>RF-Sense</h3>
+            <div class="projects-grid">
 
-                <p>
-                    A desktop application for RF signal analysis,
-                    visualization, and interference detection.
-                </p>
+                <article>
+                    <h3>RF-Sense</h3>
 
-                <p>Python | PyQt6 | Signal Processing</p>
-            </article>
+                    <p>
+                        A desktop application for RF signal analysis,
+                        visualization, and interference detection.
+                    </p>
 
-            <a href="https://github.com/francessola/RF-Sense"
-                target="_blank"
-                rel="noopener noreferrer">View on GitHub</a>
+                    <p>Python | PyQt6 | Signal Processing</p>
 
-            <article>
-                <h3>StudentOS</h3>
+                    <a href="https://github.com/francessola/RF-Sense"
+                        target="_blank"
+                        rel="noopener noreferrer">View on GitHub</a>
+                </article>
 
-                <p>
-                    A C++ academic planning application designed to 
-                    organize courses, manage assignments, and
-                    prioritize tasks based on deadlines and importance.
-                </p>
+                <article>
+                    <h3>StudentOS</h3>
 
-                <p>C++ | Algorithms | CLI</p>
-                <a href="https://github.com/francessola/StudentOS"
-                    target="_blank"
-                    rel="noopener noreferrer">View on GitHub</a>
-            </article>
+                    <p>
+                        A C++ academic planning application designed to 
+                        organize courses, manage assignments, and
+                        prioritize tasks based on deadlines and importance.
+                    </p>
 
-            <article>
-                <h3>GestureControl</h3>
+                    <p>C++ | Algorithms | CLI</p>
+                    <a href="https://github.com/francessola/StudentOS"
+                        target="_blank"
+                        rel="noopener noreferrer">View on GitHub</a>
+                </article>
 
-                <p>
-                    A computer interaction application that uses
-                    hand tracking and gesture recognition to
-                    control cursor movements and presentations.
-                </p>
+                <article>
+                    <h3>GestureControl</h3>
 
-                <p>Python | OpenCV | MediaPipe</p>
+                    <p>
+                        A computer interaction application that uses
+                        hand tracking and gesture recognition to
+                        control cursor movements and presentations.
+                    </p>
 
-                <a href="https://github.com/francessola/GestureControl"
-                    target="_blank"
-                    rel="noopener noreferrer">View on GitHub</a>
-            </article>
+                    <p>Python | OpenCV | MediaPipe</p>
+
+                    <a href="https://github.com/francessola/GestureControl"
+                        target="_blank"
+                        rel="noopener noreferrer">View on GitHub</a>
+                </article>
+            </div>
         </section>
 
-        <section if="experience">
+        <section id="experience">
             <h2>Experience & Research</h2>
 
             <article>
@@ -162,7 +183,7 @@
         <section id="skills">
             <h2>Skills & Certifications</h2>
 
-            <h3>Languages & Web Technologies</h3>
+            <h3>Programming Languages</h3>
 
             <ul>
                 <li>Python</li>
@@ -173,16 +194,41 @@
                 <li>JavaScript</li>
             </ul>
 
-            <h3>Tools & Technologies</h3>
+            <h3>Libraries &amp; Frameworks</h3>
 
             <ul>
-                <li>Git &amp; GitHub</li>
-                <li>Linux</li>
                 <li>PyQt6</li>
-                <li>ROS 2</li>
+                <li>Tkinter</li>
+                <li>NumPy</li>
+                <li>SciPy</li>
+                <li>Matplotlib</li>
                 <li>OpenCV</li>
+                <li>MediaPipe</li>
+                <li>PyAutoGUI</li>
+                <li>PyTorch</li>
+            </ul>
+
+            <h3>Robotics &amp; Simulation</h3>
+            <ul>
+                <li>ROS 2</li>
+                <li>Gazebo</li>
+                <li>PX4 STIL</li>
+                <li>CORE/EMANE</li>
+            </ul>
+
+            <h3>Developer Tools &amp; Platforms</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
                 <li>Docker</li>
-                <li>Visual Studio Code</li>
+                <li>Linux (RHEL9, Ubuntu)</li>
+            </ul>
+
+            <h3>Engineering &amp; Modeling</h3>
+            <ul>
+                <li>Fast Fourier Transform (FFT)</li>
+                <li>RF-Signal Analysis</li>
+                <li>SysML</li>
             </ul>
 
             <h3>Professional Certifications</h3>
@@ -212,7 +258,7 @@
             <h2>Get in Touch</h2>
 
             <p>
-                Interested in collaborating, discussing opportunities.
+                Interested in collaborating, discussing opportunities,
                 or connecting? I'd love to hear from you.
             </p>
 
@@ -228,10 +274,14 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Frances Solá</p>
+        <p>&copy; 2026 Frances Solá López</p>
 
         <p>Built with HTML, CSS &amp; JavaScript</p>
     </footer>
+
+    <button id="back-to-top" type="button" aria-label="Back to top">
+        ↑
+    </button>
 
     <script src="script.js"></script>
 
